@@ -1,0 +1,32 @@
+
+.toggle {
+    display: flex;
+    align-items: flex-end;
+    height: 1rem;
+    width: 2.5rem;
+    padding: 1px 2px;
+    border-radius: 24px;
+    border: solid 1px var(--secondary-color);
+    margin-right: 24px;
+}
+
+.dark-toggle {
+   justify-content: flex-end;
+   border: solid 1px var(--secondary-dark);
+}
+
+.icon {
+    margin-left: 32px;
+}
+
+.toggle span {
+    display: inline-block;
+    height: 95%;
+    width: 70%;
+    background-color: var(--primary-color);
+    border-radius: 24px;
+}
+
+.dark-toggle span {
+   background-color: var(--primary-dark);
+}

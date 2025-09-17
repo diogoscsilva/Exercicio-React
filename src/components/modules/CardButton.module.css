@@ -1,0 +1,33 @@
+
+.button {
+    align-self: flex-end;
+    background-color: var(--primary-color);
+    width: 7rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    color: var(--card-background);
+    transition: all 0.2s;
+    outline: none;
+}
+
+.dark-button {
+    background-color: var(--card-dark);
+    color: var(--primary-dark);
+    border: solid 1px var(--primary-dark);
+}
+
+.button:hover,
+.button:focus {
+    filter: brightness(95%);
+    scale: 105%;
+    border: solid 3px var(--card-background);
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+.dark-button:hover,
+.dark-button:focus {
+    background-color: var(--primary-dark);
+    color: var(--card-dark);
+    border: solid 3px var(--card-dark);
+    box-shadow: 0 0 0 3px var(--primary-dark);
+}

@@ -1,0 +1,34 @@
+
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --text-color: #343a40;
+    --rating-color: #ffc107;
+    --new-tag-bg: #28a745;
+    --sale-tag-bg: #dc3545;
+    --skeleton-bg: #e0e0e0;
+    --skeleton-shine: rgba(255, 255, 255, 0.6);
+    --font-family: 'Roboto', sans-serif;
+    --primary-dark: var(--card-background);
+    --secondary-dark: var(--background-color);
+    --text-dark: var(--background-color);
+    --background-dark: var(--secondary-color);
+    --card-dark: var(--text-color);
+    --skeleton-dark: var(--skeleton-shine);
+    --skeleton-off: var(--skeleton-bg);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+body.dark {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}

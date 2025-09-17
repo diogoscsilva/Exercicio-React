@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@import "./index.css";
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: var(--primary-color);
+    --color-secondary: var(--secondary-color);
+    --color-card: var(--card-background);
+    --color-text: var(--text-color);
+    --color-new: var(--new-tag-bg);
+    --color-sale: var(--sale-tag-bg);
+    --color-rating: var(--rating-color);
+    --color-skeleton-shine: var(--skeleton-shine);
+    --color-skeleton: var(--skeleton-bg);
+    --animate-skeleton-loading: skeleton-loading 1.5s infinite linear;
+    @keyframes skeleton-loading {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+    --color-primary-dark: var(--card-background);
+    --color-secondary-dark: var(--background-color);
+    --color-text-dark: var(--background-color);
+    --color-background-dark: var(--secondary-color);
+    --color-card-dark: var(--text-color);
+    --color-skeleton-dark: var(--skeleton-shine);
+    --color-skeleton-off: var(--skeleton-bg);
+    }
+}
+
+
+#root {
+    width: 100%;
+}
+
+
+#root.dark {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-header, .main-footer {
+    background-color: var(--card-background);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.dark .main-header, .dark .main-footer {
+    background-color: var(--card-dark);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.main-footer {
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.05);
+}
+
+.dark .main-footer {
+    box-shadow: 0 -2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.main-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.dark .main-header h1 {
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.products-section {
+    padding: 40px 0;
+}
+
+.products-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(227px, 0.8fr));
+    gap: 25px;
+}
